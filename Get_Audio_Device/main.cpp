@@ -35,9 +35,9 @@ wstring getActiveAudioDeviceName(ERole role)
 int main(int argc, char** argv)
 {
 	ERole role = eMultimedia;
-	if (argc > 0)
+	if (argc > 1)
 	{
-		int value = atoi(argv[0]);
+		int value = atoi(argv[1]);
 		if (value == 2)
 		{
 			role = eCommunications;
